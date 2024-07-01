@@ -30,10 +30,7 @@ function preload() {
 }
 
 function setup() {
-  miCanvas = createCanvas(600, 600);
-  contenedorCanvas = document.createElement('div')
-  contenedorCanvas.append(miCanvas)
-  contenedorCanvas.classList.add('contenedor_canvas')
+  createCanvas(600, 600);
   pantalla = 0;
   //Creo un objeto jugador y lo inicializo con las variables
   jugador = new Jugador(width / 2, height / 2);
